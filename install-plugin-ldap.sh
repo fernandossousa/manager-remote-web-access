@@ -3,7 +3,7 @@
 #Requisitos
 
 #1 - Configuração básica de LDAP seguindo este post: https://traviswhitney.com/2019/08/21/configuring-apache-guacamole-with-ldap-and-2fa/
-#2 - Manter o mesmo dominio/URL que será usando no manager. Ex.: https://manager.exemplo.com
+#2 - Manter o mesmo dominio/URL que será usando no manager. Ex.: https://manager.exemple.com
 
 
 # Variáveis de ambiente
@@ -11,10 +11,10 @@
 DOMAIN="manager.exemple.com"
 LDAP_DOMAIN="dc.example.com"
 LDAP_PORT="389"
-LDAP_USER_BASE_DN="OU=Users,DC=dc,DC=exemplo,DC=com"
-LDAP_CONFIG_BASE_DN="OU=Users,DC=dc,DC=exemplo,DC=com"
+LDAP_USER_BASE_DN="OU=Users,DC=dc,DC=exemple,DC=com"
+LDAP_CONFIG_BASE_DN="OU=Users,DC=dc,DC=exemple,DC=com"
 LDAP_SEARCH_BIND_PASS_READONLY="US3rP4$$w0rD"
-LDAP_SEARCH_BIND_DN="CN=ReadOnly,OU=Users,DC=dc,DC=exemplo,DC=com"
+LDAP_SEARCH_BIND_DN="CN=ReadOnly,OU=Users,DC=dc,DC=exemple,DC=com"
 
 
 

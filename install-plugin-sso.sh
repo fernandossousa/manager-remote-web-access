@@ -9,7 +9,7 @@
 
 # Variáveis de ambiente
 
-DOMAIN="manager.devops.gpa.digital"
+DOMAIN="manager.exemple.com"
 AZURE_LOGIN_URL="https://login.microsoftonline.com/359e86d1-c21e-4cf1-bccd-904360e711c1/saml2"
 
 ### NÃO ALTERAR NADA DAQUI PARA BAIXO

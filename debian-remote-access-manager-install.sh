@@ -3,7 +3,7 @@
 #Requisitos
 
 #1 - Reservar IP externo fixo ao futuro servidor
-#2 - Ter definido o dominio que será usando no manager. Ex.: manager.devops.gpa.digital
+#2 - Ter definido o dominio que será usando no manager. Ex.: manager.exemple.com
 #3 - Criar entrada do domínio escolhido no DNS apontando para o IP fixo reservado
 #4 - Abrir as portas 80 e 443 para a internet
 
@@ -11,12 +11,12 @@
 # Variáveis de ambiente
 
 GUACVERSION=`curl -s https://raw.githubusercontent.com/apache/guacamole-server/master/configure.ac | grep 'AC_INIT([guacamole-server]*' | awk -F'[][]' -v n=2 '{ print $(2*n) }'` # Latest is 1.4.0
-TOTP_TITLE="GPA Remote Access Manager"
-GUACPWD="brpassHGd36fy6q6eu4438"
+TOTP_TITLE="Remote Access Manager"
+GUACPWD="HGd36fy6q6eu4438dsadasdas"
 MYSQLPWD="HGd36fy6q6eu4438"
 HOME_PAGE_DIR=/var/lib/tomcat9/webapps
-DOMAIN=manager.devops.gpa.digital
-EMAIL="fernando.sousa@brlink.com.br"
+DOMAIN=manager.exemple.com
+EMAIL="name@exemple.com"
 
 #### Início do script ####
 
@@ -166,9 +166,9 @@ sudo service nginx restart
 ###
 echo "Criando usuários locais no servidor Manager..."
 
-BR_USERS="brlink1 brlink2 brlink3"
+USERS="user1 user2 user3"
 
-for i in $BR_USERS; do
+for i in $USERS; do
     sudo useradd $i --group netdev -m
 done
 
